@@ -3,7 +3,6 @@
     {%- set columns = source_node.columns.values() -%}
     {%- set external = source_node.external -%}
     {%- set partitions = external.partitions -%}
-
     {%- set is_csv = dbt_external_tables.is_csv(external.file_format) -%}
 
 {# https://docs.snowflake.net/manuals/sql-reference/sql/create-external-table.html #}
